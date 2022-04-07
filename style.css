@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr;
+    width: 500px;
+    max-width: 600px;
+    border: 1px solid black;
+}
+
+#display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#result {
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+}
+
+#expresion {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#buttons div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#zero {
+    grid-column: 1/3;
+}
